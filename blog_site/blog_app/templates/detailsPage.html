@@ -1,0 +1,10 @@
+{% extends 'master.html' %}
+<title>{% block title %}Details Blog{% endblock title %}</title>
+{% block content %} 
+<h2>{{object.title}}</h2>
+<br>
+<br>
+<h3>{{object.content}}</h3>
+<br>
+<h4>{{object.date_posted}}</h4>
+ {% endblock content %}
