@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/CSS/style.css' %}">
+  
+  </head>
+  <body>
+    <header>
+      <h1>Technical Blog</h1>
+    </header>
+
+    <nav>
+      <a href="/">Home</a>
+    </nav>
+
+    <main>{% block content %}{% endblock content %}</main>
+
+    <footer>
+      <p>&copy; 2025 Technical Blog. All rights reserved.</p>
+      <p>mnaawaham2001ye@gmail.com</p>
+    </footer>
+  </body>
+</html>
