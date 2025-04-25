@@ -1,6 +1,6 @@
 from django.shortcuts import get_object_or_404, redirect, render
 from .models import Post
-from .form import PostForm
+from .forms import PostForm
 
 def home(request):
   post= Post.objects.all()
