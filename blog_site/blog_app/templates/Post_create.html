@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+ {% block content  %}
+ 
+<form method="POST" enctype="multipart/form-date">
+ {% csrf_token %}
+
+ {{form.as_p}}
+
+ <br>
+ <input type="submit" value="Create" style="background-color: #3b1843; color:white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+</form>
+
+
+ <h2><a href="{% url 'home'  %}"> All Post</a></h2>
+ 
+ 
+ {% endblock   %}
